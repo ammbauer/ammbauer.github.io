@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Max W. Haslbeck</title>
+<link rel="shortcut icon" href="http://cl-informatik.uibk.ac.at/favicon.ico" type="image/x-icon">
+<style>
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h1 {
+  font-weight: normal;
+  font-variant: small-caps;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -8.5em;
+    visibility: hidden;
+}
+
+#main {
+  margin: 6em auto;
+  max-width: 800px;
+
+}
+
+header {
+  background-color: #2b5573;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 4em;
+  border-top: 6px solid #f29400;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+nav {
+  overflow: hidden;
+  background-color: #2b5573;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+h1 {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0;
+}
+
+nav a:hover {
+  background-color: #799bb3;
+}
+
+nav .active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+nav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    display: none;
+  }
+  nav .icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav.responsive {position: relative;}
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a, nav.responsive h1 {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+<nav id="nav">
+  <h1>Personal homepage of<br>Max W. Haslbeck</h1>
+  <ul>
+    <li><a href="#info" onclick="hideMenu()">Info</a></li>
+    <li><a href="#aboutme" onclick="hideMenu()">About Me</a></li>
+    <li><a href="#publications" onclick="hideMenu()">Publications</a></li>
+    <li><a href="#teaching" onclick="hideMenu()">Teaching</a></li>
+  </ul>
+  <a href="javascript:void(0);" class="icon" onclick="hideMenu()">&#9776;</a>
+</nav>
+</header>
+
+<div id="main">
+<h2>Info</h2>
+<p><a id="info" class="anchor"></a></p>
+<table>
+<tr>
+<td>
+Name:
+</td>
+<td>
+Max W. Haslbeck
+</td>
+</tr>
+<tr>
+<td>
+Email:
+</td>
+<td>
+maximilian.last name@uibk.ac.at
+</td>
+</tr>
+<tr>
+<td>
+Office:
+</td>
+<td>
+3M09, 2. OG, Technikerstraße 21a
+</td>
+</tr>
+<tr>
+<td>
+ORCID:
+</td>
+<td>
+<a href="https://orcid.org/0000-0002-9900-5746">0000-0002-9900-5746</a>
+</td>
+</tr>
+</table>
+<h2>About me</h2>
+<p><a id="aboutme" class="anchor"></a></p>
+<p>Since March 2018, I am a PhD student in Computer Science at the <a href="http://cl-informatik.uibk.ac.at/">Computational Logic</a> group at the University of Innsbruck. I am a member of the project <a href="http://cl-informatik.uibk.ac.at/research/projects/certifying-termination-and-complexity-proofs-of-pr/">Certifying Termination and Complexity Proofs of Programs</a>.</p>
+<h2>Publications</h2>
+<p><a id="publications" class="anchor"></a></p>
+<ul>
+<li><a href="https://doi.org/10.1007/978-3-030-55754-6_14">Verifying a Solver for Linear Mixed Integer Arithmetic in Isabelle/HOL</a><br> by <a href="http://cl-informatik.uibk.ac.at/users/bottesch/">Ralph Bottesch</a>, Max W. Haslbeck, Alban Reynaud, and <a href="http://cl-informatik.uibk.ac.at/users/thiemann/">René Thiemann</a><br> In NASA Formal Methods (2020)</li>
+<li><a href="https://doi.org/10.1007/s10817-020-09552-1">Formalizing the LLL Basis Reduction Algorithm and the LLL Factorization Algorithm in Isabelle/HOL</a><br> by <a href="http://cl-informatik.uibk.ac.at/users/thiemann/">René Thiemann</a>, <a href="http://cl-informatik.uibk.ac.at/users/bottesch/">Ralph Bottesch</a>, <a href="https://www.unirioja.es/cu/jodivaso/">Jose Divasón</a>, Max W. Haslbeck, <a href="http://sjcjoosten.nl/">Sebastiaan J. C. Joosten</a>, and <a href="http://group-mmm.org/~ayamada/">Akihisa Yamada</a><br> In Journal of Automated Reasoning (2020)</li>
+<li><a href="https://doi.org/10.1007/s10817-020-09545-0">Verified Analysis of Random Binary Tree Structures</a><br> by <a href="https://www21.in.tum.de/~eberlm/">Manuel Eberl</a>, Max W. Haslbeck, and <a href="https://www21.in.tum.de/~nipkow/">Tobias Nipkow</a><br> In Journal of Automated Reasoning (2020)</li>
+<li><a href="https://doi.org/10.1007/978-3-030-29007-8_13">Verifying an Incremental Theory Solver for Linear Arithmetic in Isabelle/HOL</a><br> by <a href="http://cl-informatik.uibk.ac.at/users/bottesch/">Ralph Bottesch</a>, Max W. Haslbeck, and <a href="http://cl-informatik.uibk.ac.at/users/thiemann/">René Thiemann</a><br> In Frontiers of Combining Systems, FroCoS 2019</li>
+<li><a href="https://doi.org/10.29007/xwwh">A Verified Efficient Implementation of the LLL Basis Reduction Algorithm</a><br> by <a href="http://cl-informatik.uibk.ac.at/users/bottesch/">Ralph Bottesch</a>, Max W. Haslbeck, and <a href="http://cl-informatik.uibk.ac.at/users/thiemann/">René Thiemann</a><br> In LPAR-22. 22nd International Conference on Logic for Programming, Artificial Intelligence and Reasoning (2018)</li>
+<li><a href="https://doi.org/10.1007/978-3-319-94821-8_12">Verified Analysis of Random Binary Tree Structures</a><br> by <a href="https://www21.in.tum.de/~eberlm/">Manuel Eberl</a>, Max W. Haslbeck, and <a href="https://www21.in.tum.de/~nipkow/">Tobias Nipkow</a><br> In 9th International Conference on Interactive Theorem Proving (2018)</li>
+<li><a href="https://doi.org/10.1007/s10817-017-9445-1">Verified iptables Firewall Analysis and Verification</a><br> by <a href="https://net.in.tum.de/members/diekmann/">Cornelius Diekmann</a>, <a href="https://lars.hupel.info/">Lars Hupel</a>, <a href="https://liftm.de/">Julius Michaelis</a>, Max W. Haslbeck, and <a href="https://www.net.in.tum.de/members/carle/">Georg Carle</a><br> In Journal of Automated Reasoning (2018)</li>
+<li><a href="https://doi.org/10.1109/IFIPNetworking.2016.7497196">Verified iptables Firewall Analysis</a><br> by <a href="https://net.in.tum.de/members/diekmann/">Cornelius Diekmann</a>, <a href="https://liftm.de/">Julius Michaelis</a>, Max W. Haslbeck, and <a href="https://www.net.in.tum.de/members/carle/">Georg Carle</a><br> In IFIP Networking (2016)</li>
+<li><a href="https://doi.org/10.1007/978-3-319-20615-8_1">Mining the Archive of Formal Proofs</a><br> by <a href="https://research.vu.nl/en/persons/jasmin-christian-blanchette">Jasmin Blanchette</a>, Max W. Haslbeck, <a href="https://dblp.org/pers/m/Matichuk:Daniel.html">Daniel Matichuk</a>, and <a href="https://www21.in.tum.de/~nipkow/">Tobias Nipkow</a><br> In Conference on Intelligent Computer Mathematics (2015)</li>
+</ul>
+<h2>Teaching</h2>
+<p><a id="teaching" class="anchor"></a></p>
+<ul>
+<li>Proseminar <a href="http://cl-informatik.uibk.ac.at/teaching/ss20/fp/index.php">Functional Programming (SS20)</a></li>
+<li>Proseminar <a href="http://cl-informatik.uibk.ac.at/teaching/ws19/fp/news.php?lan=en">Functional Programming (WS19/20)</a></li>
+<li>Proseminar <a href="http://cl-informatik.uibk.ac.at/teaching/ws18/eti/organisation.php?lan=en">Introduction to Theoretical Computer Science (WS18/19)</a></li>
+</ul>
+</div>
+
+<script>
+function hideMenu() {
+    var x = document.getElementById("nav");
+    if (x.className === "") {
+        x.className += "responsive";
+    } else {
+        x.className = "";
+    }
+}
+</script>
+
+
+</body>
+</html>
